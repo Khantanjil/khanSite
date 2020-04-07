@@ -61,6 +61,8 @@ Verify the deployment by navigating to your server address in your preferred bro
 127.0.0.1:8000
 ```
 [![thank you!](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kennethreitz)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Khantanjil/tanjil-s-website/issues/1)
+
 
 License
 ----
