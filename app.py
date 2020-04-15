@@ -1,6 +1,10 @@
-# Import the library to create websites
-from flask import Flask, render_template
-from bokeh.plotting import figure, show, output_file
+# Import the librarys
+from flask import send_file
+from flask import Flask
+from flask import render_template
+from bokeh.plotting import figure
+from bokeh.plotting import show
+from bokeh.plotting import output_file
 from bokeh.embed import components
 from bokeh.resources import CDN
 from pandas_datareader import data
@@ -9,12 +13,16 @@ from flask import request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func
 from send_email import send_email
+from werkzeug.utils import secure_filename
+import run
+import folium
 
 app = Flask(__name__)
 
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:newpassword@localhost/height_collector'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:newpassword@localhost/height_collector'
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://orrwejuxdvxcpe:41fe360787ddfc7991e04ed180efe3c2527221aa45ac2461fc88ae8fd5e9e138@ec2-54-152-175-141.compute-1.amazonaws.com:5432/d333bpqpqjrsi4?sslmode=require'
+app.config[
+    'SQLALCHEMY_DATABASE_URI'] = 'postgres://orrwejuxdvxcpe:41fe360787ddfc7991e04ed180efe3c2527221aa45ac2461fc88ae8fd5e9e138@ec2-54-152-175-141.compute-1.amazonaws.com:5432/d333bpqpqjrsi4?sslmode=require'
 
 db = SQLAlchemy(app)
 
@@ -34,6 +42,10 @@ class Data(db.Model):
 @app.route('/')
 def home():
     return render_template("home.html")
+
+@app.route('/met')
+def meteo():
+    return render_template("meteo.html")
 
 
 # @app.route('/about')
@@ -58,20 +70,20 @@ def webapp():
 
 @app.route('/webapp/success', methods=["POST"])
 def success():
+    global file
     if request.method == 'POST':
-        email = request.form["email_name"]
-        height = request.form["height_name"]
-        if db.session.query(Data).filter(Data.email_ == email).count() == 0:
-            data = Data(email, height)
-            db.session.add(data)
-            db.session.commit()
-            average_height = db.session.query(func.avg(Data.height_)).scalar()
-            average_height = round(average_height, 1)
-            count = db.session.query(Data.height_).count()
-            print(average_height)
-            send_email(email, height, average_height, count)
-            return render_template("success.html")
-        return render_template("index.html", text="Seems like we've got something from that email address already!")
+        file = request.files["file"]
+        file.save(secure_filename("upload" + file.filename))
+        with open("upload" + file.filename, "a") as f:
+            f.write("This was added later!")
+        print(file)
+        print(type(file))
+        return render_template("index.html", btn="download.html")
+
+
+@app.route('/webapp/download')
+def download():
+    return send_file("upload" + file.filename, attachment_filename="yourfile.csv", as_attachmnet=True)
 
 
 @app.route('/about')
