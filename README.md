@@ -18,21 +18,31 @@ My website deployed with Heroku CLI and was created with the micro web framework
 
   - Added the Data collector with database postgresql and send the email with smtplib
   - Added the candlestick charts graphs of big companies stock markets
+  - Added the url /met.html
   
  You can also:
   - View my webmap
   - Visit the data collector web application
   - Interactive with the graph
   
-### Languages
+### Usages
 
 This was builded with
 * [Python](https://www.python.org/) -  general-purpose programming language
 * [HTML](https://devdocs.io/html/) - Hypertext Markup Language, sandard markup language for documents designed to be displayed in a web browser
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Cascading Style Sheets, style sheet language used for describing the presentation of a document written in a markup language like HTML.
 * [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/) - Jinja is a web template engine for the Python programming language 
+* [Folium](https://python-visualization.github.io/folium/) - Python data, leaflet.js maps
+* [Pandas](https://pandas.pydata.org/) - Python Data Analysis Library
 
-### Installation
+### Installation (Updated)
+Activate the virtual environment with these steps:
+```sh
+cd virtualEnv
+source bin/activate
+cd ..
+```
+### Installation (Outdated)
 First, create an virtual environment and than install the dependencies and start the server.
 
 ```sh
@@ -42,7 +52,6 @@ $ cd runServer
 $ cd bin
 $ source activate
 ```
-
 And then install the requirements using...  
   
   
@@ -54,11 +63,32 @@ $ pip install pandas
 $ pip install pandas_datareader
 $ pip install psycopg2
 ```
-
+## Running the server
+Start the application with 
+```sh
+python app.py
+```
 Verify the deployment by navigating to your server address in your preferred browser.
 
 ```sh
-127.0.0.1:8000
+127.0.0.1:5000
+```
+
+## Optional
+If you d'like to change the port, you can edit the file with your preferred editor, so i choose nano:
+```sh
+nano app.py 
+```
+After, you can edit on the next line
+```py
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+To
+```py
+if __name__ == '__main__':
+    # Changes the nº port
+    app.run(debug=True, port=8080) 
 ```
 [![thank you!](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kennethreitz)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Khantanjil/tanjil-s-website/issues/1)
