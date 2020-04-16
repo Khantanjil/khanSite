@@ -18,6 +18,13 @@ My website deployed with Heroku CLI and was created with the micro web framework
   - Added the Data collector with database postgresql and send the email with smtplib
   - Added the candlestick charts graphs of big companies stock markets
   - Added the url /met.html
+
+## Updates (16/4/2020)
+  - Edited the Home Page
+  - Added the github link
+  - Added the meteorology project on the site
+  - Added many cities on the MetPort
+  - Edited main page
   
  You can also:
   - View my webmap
