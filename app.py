@@ -44,7 +44,7 @@ def home():
     return render_template("home.html")
 
 @app.route('/met')
-def meteo():
+def met():
     return render_template("meteo.html")
 
 
@@ -70,20 +70,9 @@ def webapp():
 
 @app.route('/webapp/success', methods=["POST"])
 def success():
-    global file
     if request.method == 'POST':
         file = request.files["file"]
-        file.save(secure_filename("upload" + file.filename))
-        with open("upload" + file.filename, "a") as f:
-            f.write("This was added later!")
-        print(file)
-        print(type(file))
-        return render_template("index.html", btn="download.html")
 
-
-@app.route('/webapp/download')
-def download():
-    return send_file("upload" + file.filename, attachment_filename="yourfile.csv", as_attachmnet=True)
 
 
 @app.route('/about')

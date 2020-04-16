@@ -57,7 +57,7 @@ class Meterology():
         # Temperatura máxima nos dias proximos (Previsão)
         fg_met = folium.FeatureGroup(name="Temperatura Máxima") # Feature group temperatura
         # Read the file, create columns and rows with id
-        data = pandas.read_csv("temps/todaysTemMax.txt") # Webscrapping request bs4
+        data = pandas.read_csv("temps/todaysTemMax.txt")
         latitude = list(data["latitude"]) # Make a list of the latitude
         longitude = list(data["longitude"]) # Make a list of the longitude
         city = list(data["city"]) # Make a list of the cities
