@@ -2,7 +2,7 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)  
 
 [![Website lbesson.bitbucket.org](https://img.shields.io/website-up-down-green-red/http/lbesson.bitbucket.org.svg)](https://flask-tanjil.herokuapp.com/)
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/tanjil/default%2Fkhansite?key=eyJhbGciOiJIUzI1NiJ9.NWU5OWYxMzQ3ZjczZDcyZmQ1NGU4Yjgx.5yP5JcVolgL_vWAyde5tk32fbZhvo5N6mvjqILjqR6Q&type=cf-1)]( https%3A%2F%2Fg.codefresh.io%2Fpipelines%2Fkhansite%2Fbuilds%3Ffilter%3Dtrigger%3Abuild~Build%3Bpipeline%3A5eb450ec7641237f6f2c08ca~khansite)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Khantanjil/tanjil-s-website/blob/master/LICENSE)
 [![GitHub version](https://badge.fury.io/gh/Naereen%2FStrapDown.js.svg)](https://github.com/Naereen/StrapDown.js)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  
