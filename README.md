@@ -49,6 +49,8 @@ This was builded with
 * [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/) - Jinja is a web template engine for the Python programming language 
 * [Folium](https://python-visualization.github.io/folium/) - Python data, leaflet.js maps
 * [Pandas](https://pandas.pydata.org/) - Python Data Analysis Library
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Python package for parsing HTML and XML documents. It creates a parse tree for parsed pages that can be used to extract data from HTML
+* [Requests](https://requests.readthedocs.io/en/master/)- Requests is a Python HTTP library, released under the Apache License 2.0. The goal of the project is to make HTTP requests simpler and more human-friendly
 
 ### Installation (Updated)
 Activate the virtual environment with these steps:
