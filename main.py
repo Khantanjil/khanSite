@@ -57,11 +57,11 @@ class Meterology():
         # Temperatura máxima nos dias proximos (Previsão)
         fg_met = folium.FeatureGroup(name="Temperatura Máxima") # Feature group temperatura
         # Read the file, create columns and rows with id
-        data = pandas.read_csv("temps/todaysTemMax.txt")
-        latitude = list(data["latitude"]) # Make a list of the latitude
-        longitude = list(data["longitude"]) # Make a list of the longitude
-        city = list(data["city"]) # Make a list of the cities
-        temperature = list(data["temperature"]) # Make a list of the temperatures
+        data = pandas.read_csv("coordinates.txt")
+        latitude = list(data["Latitude"]) # Make a list of the latitude
+        longitude = list(data["Longitude"]) # Make a list of the longitude
+        city = list(data["City"]) # Make a list of the cities
+        temperature = list(data["Temperature"]) # Make a list of the temperatures
         for tm, ct, lt, ln in zip(temperature, city, latitude, longitude):
             # HTML POPUP FOLIUM ICON
             html = """<h3>Informations about the %s:</h3>
@@ -82,5 +82,5 @@ class Meterology():
         folium.LayerControl().add_to(base_map)
 
     def readInfo(self):
-        data = pandas.read_csv("temps/todaysTemMax.txt")
+        data = pandas.read_csv("coordinates.txt")
         print(data)
