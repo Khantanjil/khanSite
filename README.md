@@ -19,6 +19,11 @@ My website deployed with Heroku CLI and was created with the micro web framework
   - Added the candlestick charts graphs of big companies stock markets
   - Added the url /met.html
   
+## UPdates (22/5/2020)
+  - Optimed code
+  - Optimized the files
+  - Optimized the processing time
+  
 ## Updates (7/5/2020)
   - Added 75% zoom
   - Edited the main page
