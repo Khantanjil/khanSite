@@ -47,6 +47,14 @@ def home():
 def met():
     return render_template("meteo.html")
 
+@app.route('/ip')
+def ip():
+    return render_template("ip.html")
+
+@app.route('/test')
+def test():
+    return render_template("test.html")
+
 
 # @app.route('/about')
 # def about():
