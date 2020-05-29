@@ -15,11 +15,12 @@ My website deployed with Heroku CLI and was created with the micro web framework
   
 # New Features!
 
+  - Added the url ip page, see your details about your machine
   - Added the Data collector with database postgresql and send the email with smtplib
   - Added the candlestick charts graphs of big companies stock markets
   - Added the url /met.html
   
-## UPdates (22/5/2020)
+## Updates (22/5/2020)
   - Optimed code
   - Optimized the files
   - Optimized the processing time
