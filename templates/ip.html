@@ -39,8 +39,31 @@
 		<p id="demo"></p>
 		<h3>The plataform: </h3>
 		<p id="os"></p>
-
+		<button type=button class="btn btn-outline-dark" onclick="getLocation()">Get the coordinates</button>
+		<p id="coor"></p>
 	</center> 
+
+<script>
+var x = document.getElementById("coor");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
+
+
 	<script>
 document.getElementById("demo").innerHTML =
 navigator.userAgent;
