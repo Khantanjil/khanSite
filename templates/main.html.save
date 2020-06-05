@@ -1,0 +1,8 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="main">
+<h1>Hello!</h1>
+<p>I am Tanjil, 14 years old, learning programming.</br><a href="https://github.com/Khantanjil" target="_blank">My github</a><br><a href="https://steamcommunity.com/id/steamrandomuser
+" target="_blank">My steam</a><br>My email: tanjilk604@gmail.com</p>
+</div>
+{%endblock%}
