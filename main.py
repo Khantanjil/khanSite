@@ -83,4 +83,4 @@ class Meterology():
 
     def readInfo(self):
         data = pandas.read_csv("coordinates.txt")
-        print(data)
+        #print(data)

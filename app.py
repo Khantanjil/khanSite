@@ -158,7 +158,7 @@ def about():
     output_file("Microsoft Stock Market.html")
 
     # Print out the current data frame
-    print(df)
+    #print(df)
 
     # Setting up the segment
     plot.segment(df.index, df.High, df.index, df.Low)

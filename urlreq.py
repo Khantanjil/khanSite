@@ -32,7 +32,7 @@ for i in portugal:
 	today_temp = all[0].find_all("span")[0].text
 	today = ''.join(e for e in today_temp if e.isalnum())
 	temps.append(today)
-	print(temps)
+	#print(temps)
 	l = []
 	for city, latitude, longitude in zip(portugal, lat, lon):
 		d = {}
