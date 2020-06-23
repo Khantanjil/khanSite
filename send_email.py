@@ -3,8 +3,8 @@ from email.mime.text import MIMEText
 
 
 def send_email(email, height, average_height, count):
-    from_email = "tanjilkhan.sh@gmail.com"
-    from_password = "***************"
+    from_email = "tanjilxd@gmail.com"
+    from_password = "tanjil08072005"
     to_email = email
 
     subject = "Height Data"
