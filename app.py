@@ -55,6 +55,10 @@ def ip():
 def test():
     return render_template("test.html")
 
+@app.route('/layout')
+def layout():
+    return render_template("layout.html")
+
 
 # @app.route('/about')
 # def about():
