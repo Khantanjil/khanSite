@@ -41,7 +41,7 @@ class Data(db.Model):
 # Decorator Home Page
 @app.route('/')
 def home():
-    return render_template("home.html")
+    return render_template('main.html')
 
 @app.route('/met')
 def met():
@@ -67,7 +67,8 @@ def layout():
 # Tanjil website
 @app.route('/tanjil')
 def tanjil():
-    return render_template('main.html')
+    return render_template("home.html")
+    
 
 
 @app.route('/webmap')
@@ -90,7 +91,7 @@ def success():
 @app.route('/about')
 def about():
     start = datetime.datetime(2019, 11, 10)
-    end = datetime.datetime(2020, 3, 10)
+    end = datetime.datetime.now()
     df = data.DataReader(name="GOOG", data_source="yahoo", start=start, end=end)
 
     data_increase = df.index[df.Close > df.Open]
