@@ -20,21 +20,9 @@ My website deployed with Heroku CLI and was created with the micro web framework
   - Added the candlestick charts graphs of big companies stock markets
   - Added the url /met.html
   
-## Updates (22/5/2020)
-  - Optimed code
-  - Optimized the files
-  - Optimized the processing time
-  
-## Updates (7/5/2020)
-  - Added 75% zoom
-  - Edited the main page
-
-## Updates (16/4/2020)
-  - Edited the Home Page
-  - Added the github link
-  - Added the meteorology project on the site
-  - Added many cities on the MetPort
-  - Edited main page
+## Updates (26/6/2020)
+  - Changed the background
+  - Added better viewing on devices such as mobile phones
   
  You can also:
   - View my webmap
