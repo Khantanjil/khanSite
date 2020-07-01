@@ -25,8 +25,6 @@ app.config[
     'SQLALCHEMY_DATABASE_URI'] = 'postgres://orrwejuxdvxcpe:41fe360787ddfc7991e04ed180efe3c2527221aa45ac2461fc88ae8fd5e9e138@ec2-54-152-175-141.compute-1.amazonaws.com:5432/d333bpqpqjrsi4?sslmode=require'
 
 db = SQLAlchemy(app)
-
-
 class Data(db.Model):
     __tablename__ = "data"
     id = db.Column(db.Integer, primary_key=True)
