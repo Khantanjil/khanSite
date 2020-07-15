@@ -86,7 +86,7 @@ def success():
 
 
 
-@app.route('/about')
+@app.route('/programming')
 def about():
     start = datetime.datetime(2019, 11, 10)
     end = datetime.datetime.now()

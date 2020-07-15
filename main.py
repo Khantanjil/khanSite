@@ -52,10 +52,10 @@ class Meterology():
         base_map.add_child(fg_portugal) # Add to the feature group
         
     def meteorologia(self):
-        """ Temperatura máxima (no dia atual)"""
+        """ Temperatura maxima (no dia atual)"""
         # Depois de acabar isso
-        # Temperatura máxima nos dias proximos (Previsão)
-        fg_met = folium.FeatureGroup(name="Temperatura Máxima") # Feature group temperatura
+        # Temperatura maxima nos dias proximos (Previsao)
+        fg_met = folium.FeatureGroup(name="Temperatura Maxima") # Feature group temperatura
         # Read the file, create columns and rows with id
         data = pandas.read_csv("coordinates.txt")
         latitude = list(data["Latitude"]) # Make a list of the latitude
