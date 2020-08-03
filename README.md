@@ -8,26 +8,6 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)  
 The website was made with python via Flask  
 My website deployed with Heroku CLI and was created with the micro web framework called flask in python script and is a simple blog programming to practice and do my hobby's program skills  
-
-  - Homepage
-  - Mainpage
-  - Aboutpage
-  
-# New Features!
-
-  - Added the url ip page, see your details about your machine
-  - Added the Data collector with database postgresql and send the email with smtplib
-  - Added the candlestick charts graphs of big companies stock markets
-  - Added the url /met.html
-  
-## Updates (26/6/2020)
-  - Changed the background
-  - Added better viewing on devices such as mobile phones
-  
- You can also:
-  - View my webmap
-  - Visit the data collector web application
-  - Interactive with the graph
   
 ### Usages
 
