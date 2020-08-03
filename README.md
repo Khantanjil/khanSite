@@ -12,6 +12,7 @@ My website deployed with Heroku CLI and was created with the micro web framework
 ### Usages
 
 This was builded with
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Mini Framework Based in Python
 * [Python](https://www.python.org/) -  general-purpose programming language
 * [HTML](https://devdocs.io/html/) - Hypertext Markup Language, sandard markup language for documents designed to be displayed in a web browser
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Cascading Style Sheets, style sheet language used for describing the presentation of a document written in a markup language like HTML.
@@ -28,27 +29,7 @@ cd virtualEnv
 source bin/activate
 cd ..
 ```
-### Installation (Outdated)
-First, create an virtual environment and than install the dependencies and start the server.
 
-```sh
-$ cd 'tanjil-s-website'
-$ python3 -m venv runServer
-$ cd runServer
-$ cd bin
-$ source activate
-```
-And then install the requirements using...  
-  
-  
-```sh
-$ pip install bokeh
-$ pip install flask
-$ pip install flask_sqlalchemy
-$ pip install pandas
-$ pip install pandas_datareader
-$ pip install psycopg2
-```
 ## Running the server
 Start the application with 
 ```sh
