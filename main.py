@@ -62,6 +62,7 @@ class Meterology():
         longitude = list(data["Longitude"]) # Make a list of the longitude
         city = list(data["City"]) # Make a list of the cities
         temperature = list(data["Temperature"]) # Make a list of the temperatures
+        #print(temperature)
         for tm, ct, lt, ln in zip(temperature, city, latitude, longitude):
             # HTML POPUP FOLIUM ICON
             html = """<h3>Informations about the %s:</h3>
@@ -73,6 +74,7 @@ class Meterology():
             iframe = folium.IFrame(html = html % (str(ct), str(tm), str(lt), str(ln)), width=200, height=200) # Add the html to POPUP
             fg_met.add_child(folium.CircleMarker(location=[lt, ln], popup=folium.Popup(iframe),fill=True,radius=8, fill_color=producerColor(tm), color="black", fill_opacity=1)) # Add the icon to temps
             base_map.add_child(fg_met)
+            #print(tm)
 
 
 

@@ -34,12 +34,13 @@ for i in portugal:
 	temps.append(today)
 	#print(temps)
 	l = []
-	for city, latitude, longitude in zip(portugal, lat, lon):
+	for city, latitude, longitude, temp in zip(portugal, lat, lon, temps):
 		d = {}
 		d["City"] = city
 		d["Latitude"] = latitude
 		d["Longitude"] = longitude
-		d["Temperature"] = today
+		d["Temperature"] = temp
 		l.append(d)
 
 df = pandas.DataFrame(l)
+df.to_csv('coordinates.txt')
