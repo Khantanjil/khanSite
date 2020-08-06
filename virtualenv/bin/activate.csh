@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/home/khan/Desktop/Projetos/Flask Website (copy)/virtualEnv"
+setenv VIRTUAL_ENV "/home/tanjil/Documents/projects/python projects/flask-tanjil/virtualenv"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
@@ -17,8 +17,8 @@ setenv PATH "$VIRTUAL_ENV/bin:$PATH"
 set _OLD_VIRTUAL_PROMPT="$prompt"
 
 if (! "$?VIRTUAL_ENV_DISABLE_PROMPT") then
-    if ("virtualEnv" != "") then
-        set env_name = "virtualEnv"
+    if ("virtualenv" != "") then
+        set env_name = "virtualenv"
     else
         if (`basename "VIRTUAL_ENV"` == "__") then
             # special case for Aspen magic directories
