@@ -1,5 +1,5 @@
 # Import the librarys
-from flask import send_file
+#from flask import send_file
 from flask import Flask
 from flask import render_template
 from bokeh.plotting import figure
@@ -10,9 +10,9 @@ from bokeh.resources import CDN
 from pandas_datareader import data
 import datetime
 from flask import request
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.sql import func
-from send_email import send_email
+#from flask_sqlalchemy import SQLAlchemy
+#from sqlalchemy.sql import func
+#from send_email import send_email
 from werkzeug.utils import secure_filename
 import run
 import folium
@@ -20,7 +20,7 @@ import folium
 app = Flask(__name__)
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:newpassword@localhost/height_collector'
-
+"""
 app.config[
     'SQLALCHEMY_DATABASE_URI'] = 'postgres://orrwejuxdvxcpe:41fe360787ddfc7991e04ed180efe3c2527221aa45ac2461fc88ae8fd5e9e138@ec2-54-152-175-141.compute-1.amazonaws.com:5432/d333bpqpqjrsi4?sslmode=require'
 
@@ -35,7 +35,7 @@ class Data(db.Model):
         self.email_ = email_
         self.height_ = height_
 
-
+"""
 # Decorator Home Page
 @app.route('/')
 def home():

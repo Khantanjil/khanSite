@@ -6,9 +6,23 @@
 </style>
 
 <div class="content">
-    <h1>None</h1>
-        <p>None</p>
+    <h2>Recent Programms</h2>
+    <br>
+    <h4> Web Dictionary App </h4>
+        <p>Web Dictionary with flask. Instead of <a href="https://github.com/Khantanjil/interactive-dictionary">command line interface</a> I did an web application which gives an definition of the word that you give on the entry. Check this web dictionary <a href="https://webdictionaryflask.herokuapp.com/"> application</a>!</p>
+        <button type="button" class="btn btn-outline-dark"><a href="https://webdictionaryflask.herokuapp.com/" target="_blank">Web Dictionary App</a></button>
     </div>
+    <h4>Data Collector Web Application</h4>
+    <p>This application stores data and send email with the information of calculation of the average of the persons height. Uses PostGreSQL to store the given values.</p>
+    <button type="button" class="btn btn-outline-dark"><a href="https://tanjildatabase.herokuapp.com/">Data Collector</a></button>
+    <p><br></p>
+
+    <h2> In Progress </h2>
+    <h4> More complex meteorology </h4>
+    <p> I have already done an meteorlogy as you can see <a href="{{url_for('met')}}">here</a>. But was only focus for one country which was the Portugal. I intend to do it for all countries. Or the most famous countries. I intend to do it again with Beautiful Soup</p>
+    <br>
+    <h4> An login form </h4>
+    <p> To practise, i want to create an login form which stores the database and you can set your profile and create posts in this website. </p>
 </div>
 
 {%endblock%}
