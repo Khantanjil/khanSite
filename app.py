@@ -49,10 +49,6 @@ def met():
 def ip():
     return render_template("ip.html")
 
-@app.route('/test')
-def test():
-    return render_template("test.html")
-
 @app.route('/layout')
 def layout():
     return render_template("layout.html")
