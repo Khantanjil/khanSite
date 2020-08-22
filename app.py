@@ -36,6 +36,10 @@ class Data(db.Model):
         self.height_ = height_
 
 """
+
+@app.route('/secret')
+def secret():
+    return render_template("ignorepls.html")
 # Decorator Home Page
 @app.route('/')
 def home():
