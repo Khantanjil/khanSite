@@ -37,6 +37,11 @@ class Data(db.Model):
 
 """
 
+@app.route('/login')
+def login():
+    return render_template("login.html")
+
+
 @app.route('/secret')
 def secret():
     return render_template("ignorepls.html")
