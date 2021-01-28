@@ -200,5 +200,4 @@ def inc_dec(c, o):
 
 
 if __name__ == '__main__':
-    # Loads the website
     app.run(debug=True)
