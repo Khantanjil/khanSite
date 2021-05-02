@@ -41,6 +41,9 @@ class Data(db.Model):
 def login():
     return render_template("login.html")
 
+@app.route('/polidofotos')
+def polidofotos():
+    return render_template("polidofotos.html")
 
 @app.route('/secret')
 def secret():
