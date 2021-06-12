@@ -29,7 +29,6 @@ for i in portugal:
 	content = r.content
 	soup = BeautifulSoup(content, "html.parser")
 	all_list = soup.find_all("span", {"class": "m_table_weather_day_max_temp"})
-	print(all_list)
 	"""
 	today_temp = all_list[0].find_all("span")[0].text
 	today = ''.join(e for e in today_temp if e.isalnum())

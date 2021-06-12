@@ -45,6 +45,10 @@ def login():
 def polidofotos():
     return render_template("polidofotos.html")
 
+@app.route('/shield@21712356')
+def shield():
+    return render_template("shield.html")
+
 @app.route('/secret')
 def secret():
     return render_template("ignorepls.html")
