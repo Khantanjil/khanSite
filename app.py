@@ -49,6 +49,10 @@ def polidofotos():
 def shield():
     return render_template("shield.html")
 
+@app.route('/shield@92034')
+def shield01():
+    return render_template("shield01.html")
+
 @app.route('/secret')
 def secret():
     return render_template("ignorepls.html")
