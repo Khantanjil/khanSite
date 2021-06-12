@@ -1,5 +1,4 @@
 beautifulsoup4==4.9.1
-gunicorn
 bokeh==2.1.1
 branca==0.4.1
 bs4==0.0.1
